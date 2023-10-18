@@ -134,10 +134,11 @@ h3 {
 .contacts-list {
   display: flex;
   font-style: normal;
-  gap: 40px;
+  column-gap: 40px;
 }
 
 .contacts-link {
+  font-family: inherit;
   letter-spacing: 0.02em;
   line-height: 1.5;
   padding: 24px 0;
@@ -193,10 +194,11 @@ h3 {
   border: none;
   border-radius: 4px;
   margin: 0 auto;
+  cursor: pointer;
 
   color: #ffffff;
   background-color: #4d5ae5;
-  cursor: pointer;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .hero-button:hover,
@@ -213,6 +215,18 @@ h3 {
 
 .advantages-item {
   width: calc((100% - 72px) / 4);
+}
+
+.advantages-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  padding: 24px 100px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  background: #f4f4fd;
 }
 
 .advantages-subtitle {
@@ -243,6 +257,7 @@ h3 {
 
 .team-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
@@ -252,7 +267,6 @@ h3 {
 }
 
 .team-item {
-  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
@@ -268,6 +282,29 @@ h3 {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.team-soc-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #f4f4fd;
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: #404bbf;
 }
 
 /* --- PORTFOLIO --- */
@@ -318,12 +355,19 @@ portfolio-link:focus {
 }
 
 /* --- FOOTER --- */
-.page-footer {
-  padding: 100px 0;
+.page-footer .container {
+  display: flex;
+  align-items: baseline;
 }
 
 .page-footer {
+  display: flex;
+  padding: 100px 0;
   background-color: #2e2f42;
+}
+
+.footer-offer {
+  /* margin-right: 120px; */
 }
 
 .footer-logo {
@@ -344,4 +388,35 @@ portfolio-link:focus {
   width: 264px;
 
   color: #f4f4fd;
+}
+
+.footer-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.footer-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.footer-soc-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #f4f4fd;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: #31d0aa;
 }
