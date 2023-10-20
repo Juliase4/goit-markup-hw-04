@@ -407,19 +407,18 @@ h3 {
 }
 
 /* --- FOOTER --- */
+.page-footer {
+  padding: 100px 0;
+  background-color: #2e2f42;
+}
+
 .page-footer .container {
   display: flex;
   align-items: baseline;
 }
 
-.page-footer {
-  display: flex;
-  padding: 100px 0;
-  background-color: #2e2f42;
-}
-
 .footer-offer {
-  /* margin-right: 120px; */
+  margin-right: 120px;
 }
 
 .footer-logo {
