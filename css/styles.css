@@ -383,8 +383,8 @@ h3 {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-overlay:hover .portfolio-overley-description,
-.portfolio-overlay:focus .portfolio-overley-description {
+.portfolio-item:hover .portfolio-overley-description,
+.portfolio-item:focus .portfolio-overley-description {
   transform: translateY(0%);
 }
 
